@@ -1,6 +1,6 @@
 // App to create the dropdown menu with id's, bar plot, guage plot and bubble plot
 
-// Create function to read in all .json data with use of D3
+// Create function to build the metadata demographic panel
 function jsonInfo(id){
     d3.json("samples.json").then((data)=> {
         let metadata = data.metadata;
@@ -38,7 +38,14 @@ function plots(id) {
           {
           domain: { x: [0, 1], y: [0, 1] },
           value: wfreq,
-          title: {text: `Times Washed Per Week`},
+          // title: {text: `Times Washed Per Week`},
+          title: {
+              text: `<b>Times Washed Per Week</b>`,
+              font: {
+                  size: 20,
+                  color: 'rgb(0,0,0)'
+              }
+          },
           type: "indicator",
           delta: {reference: 9, 'increasing': {color: "red"}},
           mode: "gauge+number+delta",
@@ -61,6 +68,14 @@ function plots(id) {
         var guage_layout = {
             width: 600,
             height: 600,
+            font: {
+                family: 'Quicksand'
+            },
+            hoverlabel: {
+                font: {
+                    family: 'Quicksand'
+                }
+            },
             margin: { t: 20, b: 40, l:140, r:140 }
           };
         // Use Plotly to create the guage plot
@@ -77,8 +92,32 @@ function plots(id) {
             orientation: "h",
         };
         var data = [bar_plot];
+
+        // define the plot layout
+       var layoutBar = {
+           height: 450,
+           width: 500,
+           font: {
+               family: 'Quicksand'
+           },
+           hoverlabel: {
+               font: {
+                   family: 'Quicksand'
+               }
+           },
+           title: {
+               text: `<b>Subject ${id}: Top 10 related OTU's</b>`,
+               font: {
+                   size: 20,
+                   color: 'rgb(0,0,0)'
+               }
+           },
+           yaxis: {
+               tickfont: { size: 14 }
+           }
+       }
         // Use Plotly to create the bar plot
-        Plotly.newPlot("bar", data);
+        Plotly.newPlot("bar", data, layoutBar);
 
         // Define the bubble plot paramaters
         var bubble_plot = {
@@ -87,15 +126,31 @@ function plots(id) {
             mode: "markers",
             marker: {
                 size: samples.sample_values,
-                color: samples.otu_ids
+                color: samples.otu_ids,
+                colorscale: 'YlGnBu',
             },
             text: samples.otu_labels
         };
         // Define the bubble plot layout
         var bubble_layout = {
+          title: {
+              text: `<b>Belly Button Bacteria</b>`,
+              font: {
+                  size: 20,
+                  color: 'rgb(0,0,0)'
+              }
+          },
             xaxis:{title: "OTU ID"},
             height: 600,
-            width: 1200
+            width: 1200,
+            font: {
+                family: 'Quicksand'
+            },
+            hoverlabel: {
+                font: {
+                    family: 'Quicksand'
+                }
+            },
         };
         var data1 = [bubble_plot];
         // Use Plotly to create the bubble plot
