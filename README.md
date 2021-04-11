@@ -3,7 +3,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 
 ## Plot.ly Homework - Belly Button Biodiversity
 
-In this activity I needed to read in a json dataset into a web page. The unique challenge in this task was to display the the demographic information of each unique participant as well as show information in several different plots about the belly button biodiversity of that test subject.  For each subject that could be selected from a dropdown menu, all of the plots needed to updated with the selection.  Though these steps are not in order of completion, these are the steps I completed for this assignment.  
+In this activity I needed to read in a json dataset of Operational Taxonomic Unit's (OTU's) into a web page. The unique challenge in this task was to display the the demographic information of each unique participant as well as show information in several different plots about the belly button biodiversity of that test subject.  For each subject that could be selected from a dropdown menu, all of the plots needed to updated with the selection.  Though these steps are not in order of completion, these are the steps I completed for this assignment.  
 
 ### Read in .JSON 
 1) Use the D3 library to read in samples.json.
