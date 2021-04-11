@@ -40,7 +40,7 @@ function plots(id) {
           value: wfreq,
           // title: {text: `Times Washed Per Week`},
           title: {
-              text: `<b>Times Washed Per Week</b>`,
+              text: `<b>ID ${id}: Times Washed Per Week</b>`,
               font: {
                   size: 20,
                   color: 'rgb(0,0,0)'
@@ -134,7 +134,7 @@ function plots(id) {
         // Define the bubble plot layout
         var bubble_layout = {
           title: {
-              text: `<b>Belly Button Bacteria</b>`,
+              text: `<b>ID ${id}: Belly Button Bacteria OTU ID's Sample Sizes</b>`,
               font: {
                   size: 20,
                   color: 'rgb(0,0,0)'
