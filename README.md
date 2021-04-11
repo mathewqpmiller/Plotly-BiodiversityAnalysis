@@ -23,7 +23,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 * Use otu_labels for the text values.
 
 <p align="center">
-    <img src="images/my_bubble_plot.jpg" height ="350">
+    <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_bubble_plot.JPG?raw=true" height ="350">
 </p>
 
 4) Display the sample metadata, i.e., an individual's demographic information.
