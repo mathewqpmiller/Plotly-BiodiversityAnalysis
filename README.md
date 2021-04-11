@@ -32,7 +32,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 * Additionally, you are welcome to create any layout that you would like for your dashboard.
 
 <p align="center">
-    <img src="images/my_demographics_panel.jpg" height ="350">
+    <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_demographics_panel.JPG?raw=true" height ="350">
 </p>
 
 ### Advanced Challenge Assignment (Optional)
