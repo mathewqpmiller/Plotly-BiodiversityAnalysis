@@ -12,7 +12,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 * Use otu_labels as the hovertext for the chart.
 
 <p align="center">
-    <img src="images/my_bar_chart.jpg" height ="350">
+    <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_bar_chart.JPG?raw=true" height ="350">
 </p>
 
 3) Create a bubble chart that displays each sample.
