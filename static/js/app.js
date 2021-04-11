@@ -22,7 +22,7 @@ function plots(id) {
     d3.json("samples.json").then((data)=> {
         //console.log(data)
 
-        // Create a variable that holds the washed frequency
+        // Create a variable that filters the washed frequency
         var wfreq = data.metadata.filter(f => f.id.toString() === id)[0];
         wfreq = wfreq.wfreq;
         console.log("Washing Freq: " + wfreq);
@@ -49,22 +49,18 @@ function plots(id) {
         var labels = samples.otu_labels.slice(0, 10).reverse();
         console.log("labels: " + labels);
 
-        // create trace variable for the plot
-        var trace = {
+        // Define the bar plot paramaters
+        var bar_plot = {
             x: samplevalues,
             y: OTU_id,
             text: labels,
             marker: {
-              color: 'Blue'},
+              color: '68b1b6'},
             type:"bar",
             orientation: "h",
         };
-
         // create data variable
-        var data = [trace];
-
-        // create layout variable to set plots layout
-
+        var data = [bar_plot];
         // create the bar plot
         Plotly.newPlot("bar", data);
 
@@ -94,7 +90,7 @@ function plots(id) {
         // create the bubble plot
         Plotly.newPlot("bubble", data1, layout_b);
 
-        // Create the guage plot paramaters
+        // Define the guage plot paramaters
         var guage_plot = [
           {
           domain: { x: [0, 1], y: [0, 1] },
@@ -119,12 +115,12 @@ function plots(id) {
 
           }
         ];
-        var layout_g = {
+        var guage_layout = {
             width: 600,
             height: 600,
-            margin: { t: 20, b: 40, l:100, r:100 }
+            margin: { t: 20, b: 40, l:140, r:140 }
           };
-        Plotly.newPlot("gauge", guage_plot, layout_g);
+        Plotly.newPlot("gauge", guage_plot, guage_layout);
       });
   }
 
