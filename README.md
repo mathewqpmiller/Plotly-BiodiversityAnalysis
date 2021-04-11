@@ -42,7 +42,7 @@ The following task is advanced and therefore optional.
 * Update the chart whenever a new sample is selected.
 
 <p align="center">
-    <img src="images/my_guage_indicator.jpg" height ="300">
+    <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_guage_indicator.JPG?raw=true" height ="300">
 </p>
 
 ### Deployment
