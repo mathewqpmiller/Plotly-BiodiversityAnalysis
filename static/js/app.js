@@ -96,7 +96,7 @@ function plots(id) {
         // define the plot layout
        var layoutBar = {
            height: 450,
-           width: 500,
+           width: 470,
            font: {
                family: 'Quicksand'
            },
@@ -106,7 +106,7 @@ function plots(id) {
                }
            },
            title: {
-               text: `<b>Subject ${id}: Top 10 related OTU's</b>`,
+               text: `<b>ID ${id}: Top 10 associated OTU's</b>`,
                font: {
                    size: 20,
                    color: 'rgb(0,0,0)'
