@@ -1,21 +1,21 @@
 // App to create the dropdown menu with id's, bar plot, guage plot and bubble plot
 
-// Create function to read in all .json data
+// Create function to read in all .json data with use of D3
 function jsonInfo(id){
     d3.json("samples.json").then((data)=> {
-        var metadata = data.metadata;
-        //filter samples.json's demographic data by id
-        var filterResult = metadata.filter(info => info.id.toString() === id)[0];
-        var panelBody = d3.select("#sample-metadata");
-        //empty the demo info panel each time before getting new data
-        panelBody.html("");
-        Object.entries(filterResult).forEach((key)=>{
-            panelBody.append("p").text(key[0] + ":" + key[1]);
+        let metadata = data.metadata;
+        // Create a variable that filters the entire dataset by ID
+        let filter_ID = metadata.filter(info => info.id.toString() === id)[0];
+        let demographic_panel = d3.select("#sample-metadata");
+        // Clear the panel
+        demographic_panel.html("");
+        Object.entries(filter_ID).forEach((key)=>{
+            demographic_panel.append("p").text(key[0] + ":" + key[1]);
         });
     });
 };
 
-// Create a function for all the plots
+// Create a function to filter the dataset and build plots
 function plots(id) {
     // getting data from the json file
     d3.json("samples.json").then((data)=> {
@@ -27,9 +27,9 @@ function plots(id) {
         // Create a variable that slices the top ten similar OTU's
         let top_ten = samples.sample_values.slice(0, 10).reverse();
         // Create a variable for the top ten OTU ID's
-        let OTU = (samples.otu_ids.slice(0, 10)).reverse();
+        let otu = (samples.otu_ids.slice(0, 10)).reverse();
         // Map the OTU ID's to work with the bar chart
-        let OTU_id = OTU.map(d => "OTU" + d)
+        let otu_id = otu.map(d => "OTU" + d)
         // Create a variable for the top ten OTU labels
         let labels = samples.otu_labels.slice(0, 10).reverse();
 
@@ -63,13 +63,13 @@ function plots(id) {
             height: 600,
             margin: { t: 20, b: 40, l:140, r:140 }
           };
-        // Use Plotly to create the bubble plot
+        // Use Plotly to create the guage plot
         Plotly.newPlot("gauge", guage_plot, guage_layout);
 
         // Define the bar plot paramaters
         var bar_plot = {
             x: top_ten,
-            y: OTU_id,
+            y: otu_id,
             text: labels,
             marker: {
               color: '68b1b6'},
@@ -92,14 +92,14 @@ function plots(id) {
             text: samples.otu_labels
         };
         // Define the bubble plot layout
-        var layout_b = {
+        var bubble_layout = {
             xaxis:{title: "OTU ID"},
             height: 600,
             width: 1200
         };
         var data1 = [bubble_plot];
         // Use Plotly to create the bubble plot
-        Plotly.newPlot("bubble", data1, layout_b);
+        Plotly.newPlot("bubble", data1, bubble_layout);
       });
   }
 
