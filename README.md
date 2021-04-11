@@ -3,7 +3,7 @@ University of Oregon: Data Analytics Boot Camp repository for homework assignmen
 
 ## Plot.ly Homework - Belly Button Biodiversity
 
-In this activity I needed to read in a json dataset into a web page. The unique challenge in this task was to display the the demographic information of each unique participant as well as show information in several different plots about the belly button biodiversity of that test subject.  For each subject that could be selected from a dropdown menu, all of the plots needed to updated with the selection.  Though these steps are not in order of completion, these are the steps to be accomplished for the assignment.  
+In this activity I needed to read in a json dataset into a web page. The unique challenge in this task was to display the the demographic information of each unique participant as well as show information in several different plots about the belly button biodiversity of that test subject.  For each subject that could be selected from a dropdown menu, all of the plots needed to updated with the selection.  Though these steps are not in order of completion, these are the steps I completed for this assignment.  
 
 ### Read in .JSON 
 1) Use the D3 library to read in samples.json.
@@ -30,7 +30,7 @@ In this activity I needed to read in a json dataset into a web page. The unique 
     <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_bubble_plot.JPG?raw=true" height ="350">
 </p>
 
-### Create Demographics Panel
+### Create Demographic Panel
 4) Display the sample metadata, i.e., an individual's demographic information.
 * Display each key-value pair from the metadata JSON object somewhere on the page.
 * Update all of the plots any time that a new sample is selected.
@@ -50,7 +50,7 @@ The following task is advanced and therefore optional.
     <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_guage_indicator.JPG?raw=true" height ="300">
 </p>
 
-### Deployment HTML to GitHub Pages
+### Deploy HTML to GitHub Pages
 * Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo.
 * https://mathewqpmiller.github.io/Plotly-Biodiversity_Analysis/
 * Ensure your repository has regular commits (i.e. 20+ commits) and a thorough README.md file
