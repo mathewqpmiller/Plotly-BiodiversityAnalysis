@@ -58,6 +58,8 @@ Now that all of my charts were built, I had to place them into an HTML page and 
 
 GitPages Link: https://mathewqpmiller.github.io/Plotly-Biodiversity_Analysis/
 
+#
+#
 <p align="center">
 UNIVERSITY OF OREGON: Data Analytics Boot Camp - Repository for project 12(Plotly Challenge)
 </p>
