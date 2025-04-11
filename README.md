@@ -14,7 +14,7 @@ I had to create a horizontal bar chart with a dropdown menu to display the top 1
 * Use otu_labels as the hovertext for the chart.
 
 <p align="center">
-    <img src="https://github.com/mathewqpmiller/Plotly-BiodiversityAnalysis/blob/main/Images/Dashboard.JPG?raw=true" height ="350">
+    <img src="https://github.com/mathewqpmiller/Plotly-BiodiversityAnalysis/blob/main/Images/my_bar_chart.JPG?raw=true" height ="350">
 </p>
 
 ### Task 3: Create Bubble Plot
@@ -50,7 +50,11 @@ The following task is advanced and therefore optional.
 </p>
 
 ### Project Submission: Deploy HTML to GitHub Pages
-Now that all of my charts were built, I had to place them into an HTML page and create an interactive dashboard. As stated before, all of the charts needed to change simultaneously when a new selection was made from the dropdown menu. Once that was complete I had to deploy my page to a static page hosting service. Since I already have my projects in GitHub, I decided to use GitPages to host my webpage.  Below is a screenshot of the Dashboard followed by a link to the webpage. Please feel free to visit the page and select different options from the dropdown menu to see how the dashboard changes and to learn more about belly button biodiversity.  
+Now that all of my charts were built, I had to place them into an HTML page and create an interactive dashboard. As stated before, all of the charts needed to change simultaneously when a new selection was made from the dropdown menu. Once that was complete I had to deploy my page to a static page hosting service. Since I already have my projects in GitHub, I decided to use GitPages to host my webpage.  Below is a screenshot of the Dashboard followed by a link to the webpage. Please feel free to visit the page and select different options from the dropdown menu to see how the dashboard changes and to learn more about belly button biodiversity. 
+
+<p align="center">
+    <img src="https://github.com/mathewqpmiller/Plotly-BiodiversityAnalysis/blob/main/Images/Dashboard.JPG?raw=true" height ="350">
+</p>
 
 GitPages Link: https://mathewqpmiller.github.io/Plotly-BiodiversityAnalysis/
 
