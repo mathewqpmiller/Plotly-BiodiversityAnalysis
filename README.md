@@ -53,10 +53,10 @@ The following task is advanced and therefore optional.
 Now that all of my charts were built, I had to place them into an HTML page and create an interactive dashboard. As stated before, all of the charts needed to change simultaneously when a new selection was made from the dropdown menu. Once that was complete I had to deploy my page to a static page hosting service. Since I already have my projects in GitHub, I decided to use GitPages to host my webpage.  Below is a screenshot of the Dashboard followed by a link to the webpage. Please feel free to visit the page and select different options from the dropdown menu to see how the dashboard changes and to learn more about belly button biodiversity.  
 
 <p align="center">
-    <img src="https://mathewqpmiller.github.io/Plotly-BiodiversityAnalysis//blob/main/Images/Dashboard.JPG?raw=true" height ="500">
+    <img src="https://mathewqpmiller.github.io/Plotly-Biodiversity_Analysis//blob/main/Images/Dashboard.JPG?raw=true" height ="500">
 </p>
 
-GitPages Link: https://mathewqpmiller.github.io/Plotly-Biodiversity_Analysis/
+GitPages Link: https://mathewqpmiller.github.io/Plotly-BiodiversityAnalysis/
 
 #
 #
