@@ -14,7 +14,7 @@ I had to create a horizontal bar chart with a dropdown menu to display the top 1
 * Use otu_labels as the hovertext for the chart.
 
 <p align="center">
-    <img src="https://github.com/mathewqpmiller/Plotly-Biodiversity_Analysis/blob/main/Images/my_bar_chart.JPG?raw=true" height ="350">
+    <img src="https://github.com/mathewqpmiller/Plotly-BiodiversityAnalysis/blob/main/Images/Dashboard.JPG?raw=true" height ="350">
 </p>
 
 ### Task 3: Create Bubble Plot
